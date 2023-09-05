@@ -31,6 +31,7 @@ public class Application {
                     e.printStackTrace();
                 }
             }else if (methods[i].getName().equals("lab2")){
+                method2FoundFlag = true;
                 try {
                     methods[i].invoke(lab, new Object[]{999});
                 } catch (ReflectiveOperationException e) {
